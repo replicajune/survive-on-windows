@@ -44,10 +44,10 @@ Basic utilities are always welcomed :
 
 ```
 sudo apt update -y && apt install \
-  openssh-client
-  git
-  htop
-  vim
+  openssh-client \
+  git \
+  htop \
+  vim \
   tmux
 ```
 
