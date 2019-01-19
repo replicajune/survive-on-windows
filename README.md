@@ -29,6 +29,7 @@ Here is a little selection of tools I like to have around :
 -   [KeepassXC](https://keepassxc.org/download/#windows) : if you don't have any passwords manager already, this one is a great choice
 -   [SysinternalsSuite](https://docs.microsoft.com/en-us/sysinternals/downloads/) : a couple of utilities, including [Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer) and [Autoruns](https://docs.microsoft.com/en-us/sysinternals/downloads/autoruns)
 -   [Veracrypt](https://www.veracrypt.fr/en/Downloads.html) : Setup encrypted drives. Known as a safe alternative to bitlocker, and compatible with Linux
+-   [Scoop](https://github.com/lukesampson/scoop) : a command-line installer for Windows
 
 ### Workflows : Git, ssh ...
 
