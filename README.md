@@ -23,13 +23,23 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 
 Here is a selection of tools to have around :
 
+## Chocolatey
+
+[Chocolatey](https://chocolatey.org) helps to install packages for windows the way apt or yum would do. As a powershell admin, do :
+
+```
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+```
+
+Almost all tools given bellow are available wih Chocolatey and are most of the time installed doing  `choco install package_name`
+
 ## Utilities
 
 -   [7zip](https://www.7-zip.org/) : to replace to winrar, winzip..
 -   [KeepassXC](https://keepassxc.org/download/#windows) : if you don't have any passwords manager already, this one is a great choice
 -   [SysinternalsSuite](https://docs.microsoft.com/en-us/sysinternals/downloads/) : a couple of utilities, including [Process Explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer) and [Autoruns](https://docs.microsoft.com/en-us/sysinternals/downloads/autoruns)
 -   [Veracrypt](https://www.veracrypt.fr/en/Downloads.html) : Setup encrypted drives. Known as a safe alternative to bitlocker, and compatible with Linux
--   [Scoop](https://github.com/lukesampson/scoop) : a command-line installer for Windows
+-   [Scoop](https://github.com/lukesampson/scoop) : a command-line installer for Windows, alternative to Chocolatey
 
 ## Workflows : Git, ssh ...
 
