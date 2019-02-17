@@ -21,9 +21,9 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 
 # Tools
 
-Here is a little selection of tools I like to have around :
+Here is a selection of tools to have around :
 
-### Utilities
+## Utilities
 
 -   [7zip](https://www.7-zip.org/) : to replace to winrar, winzip..
 -   [KeepassXC](https://keepassxc.org/download/#windows) : if you don't have any passwords manager already, this one is a great choice
@@ -31,15 +31,23 @@ Here is a little selection of tools I like to have around :
 -   [Veracrypt](https://www.veracrypt.fr/en/Downloads.html) : Setup encrypted drives. Known as a safe alternative to bitlocker, and compatible with Linux
 -   [Scoop](https://github.com/lukesampson/scoop) : a command-line installer for Windows
 
-### Workflows : Git, ssh ...
+## Workflows : Git, ssh ...
 
 -   [cmder](http://cmder.net/) : Terminal, WSL compatible
 -   [Github Desktop](https://desktop.github.com/) : git client (use https scheme for your local clones, instead of ssh)
 -   [Atom](https://atom.io/) : IDE, compatible with *Github Desktop* ([VScode](https://code.visualstudio.com/) is also a good option)
 
-### WSL Setup
+## Linux, VM
+
+Some stuff will need a proper Linux installation instead of WSL, you might want to use :
+
+-   [Vagrant](https://www.vagrantup.com/) : automatic provision of VMs with Virtualbox (or Hyper-V if you're into that)
+-   [Virtualbox](https://www.virtualbox.org/) : a backend for Vagrant
+
+# WSL
 
 > This part assume you chosed **ubuntu** as your WSL provider, other providers might need adjustements from what's said here.
+## Setup
 
 Basic utilities are always welcomed :
 
@@ -52,7 +60,7 @@ sudo apt update -y && apt install \
   tmux
 ```
 
-#### Dotfiles
+### Dotfiles
 
 I've a couple of custom stuff set in `.bash_wsl`. To source that in `.bashrc`, I have this :
 
@@ -83,11 +91,13 @@ Be careful when importing files from Windows and WSL environment, as file-format
 
 Generally speaking, its quite a bad idea to mix files used by wsl and windows, partially because of that problem.
 
-### Upgrade WSL
+> Note that this "guide" is using bash exclusively, but WSL is compatible with any shells. When launching wsl, just add your prefered shell, like : `wsl sh` !
+
+## Upgrade WSL
 
 You might need to update *WSL* at some point. Two options exists : One using `lxrun`, the other one through *WSL*.
 
-#### Using WSL
+### Using WSL
 
 This is a bit like a `dist-upgrade` :
 
@@ -97,7 +107,7 @@ do-release-upgrade
 
 > :information_source: one or more reboot might be needed.
 
-#### Via `lxrun`
+### Via `lxrun`
 
 > :warning: This will **wipe** your *WSL* installation. **BACKUP EVERYTHING** :warning:
 
@@ -109,19 +119,13 @@ lxrun /uninstall /full /y
 
 -   Go back to the [Windows store](https://docs.microsoft.com/en-us/windows/wsl/install-win10#install-your-linux-distribution-of-choice), install *WSL*, and setup everything again/back.
 
-## Linux, VM
 
-Some stuff will need a proper Linux installation, you might want to use :
-
--   [Vagrant](https://www.vagrantup.com/) : automatic provision of VMs with Virtualbox (or Hyper-V if you're into that)
--   [Virtualbox](https://www.virtualbox.org/) : a backend for Vagrant
-
-## Other nice stuff
+# Other nice stuff
 
 I personally like those tools on any windows installation :thumbsup: :
 
--   [Rambox](https://rambox.pro/#home) : multi-client accounts manager (mails & IMs mainly)
--   [Brave](https://laptop-updates.brave.com/latest/winx64) : use chromium, with security by design and have a neat adblocker included
+-   [Rambox](https://rambox.pro/#home) : multi-client accounts manager (mails & IMs mainly).
+-   [Brave](https://laptop-updates.brave.com/latest/winx64) : use chromium, with security by design and have a neat adblocker included.
 -   [Winamp](https://www.winamp.com/) : it's still alive !
--   [Spotify](https://www.spotify.com/fr/download/windows)
+-   [Spotify](https://www.spotify.com/fr/download/windows) : needs no introduction.
 -   [BleachBit](https://www.bleachbit.org/download/windows) : because the other candidate is becoming a bit weird lately..
