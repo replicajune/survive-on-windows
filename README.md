@@ -56,7 +56,10 @@ Some stuff will need a proper Linux installation instead of WSL, you might want 
 
 # WSL
 
-> This part assume you chosed **ubuntu** as your WSL provider, other providers might need adjustements from what's said here.
+[WSL](https://docs.microsoft.com/en-us/windows/wsl/about) is a tool to interact with an Unix shell under Windows. Until some years ago, [Cygwin](https://www.cygwin.com/) was the way to go 100% of the time, but today WSL offer a way more interesting integration to windows than Cygwin. WSL also ship with flavors of Linux distributions instead of being a dedicated flavor like Cygwin, meaning that you'll use your WSL instance as Ubuntu, Fedora, Suse, etc..
+
+Exemples given bellow assume you chosed **ubuntu** as your WSL provider.
+
 ## Setup
 
 Basic utilities are always welcomed :
