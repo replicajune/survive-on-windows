@@ -71,6 +71,8 @@ sudo apt update -y && apt install \
   htop \
   vim \
   tmux
+  man
+  manpages
 ```
 
 ### Dotfiles
