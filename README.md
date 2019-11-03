@@ -39,13 +39,13 @@ Almost all tools given bellow are available either with Chocolatey, Scoop or bot
 
 -   Chocolatey:
 
-```
+``` powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 
 -   Scoop:
 
-```
+``` powershell
 iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
 scoop install git 7zip
 scoop bucket add extras
@@ -78,7 +78,7 @@ Some stuff will need a proper Linux installation instead of WSL, you might want 
 -   [Vagrant](https://www.vagrantup.com/) : automatic provision of VMs with Virtualbox (or Hyper-V if you're into that)
 -   [Virtualbox](https://www.virtualbox.org/) : a backend for Vagrant
 
-# WSL
+# WSL Legacy
 
 [WSL](https://docs.microsoft.com/en-us/windows/wsl/about) ships with flavors of Linux distributions instead of being a dedicated flavor "like" Cygwin is, meaning that you'll use your WSL instance as Ubuntu, Fedora, Suse, etc..
 
@@ -140,7 +140,6 @@ lxrun /uninstall /full /y
 ```
 
 -   Go back to the [Windows store](https://docs.microsoft.com/en-us/windows/wsl/install-win10#install-your-linux-distribution-of-choice), install *WSL*, and setup everything again/back.
-
 
 # Other nice stuff to have
 
