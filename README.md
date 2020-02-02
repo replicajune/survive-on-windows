@@ -111,14 +111,14 @@ do-release-upgrade
 
 > :information_source: one or more reboot might be needed.
 
-### Via *lxrun*
+### Via *wslconfig*
 
 > :warning: This will **wipe** your *WSL* installation. **BACKUP EVERYTHING** :warning:
 
-- Uninstall *WSL* :
+- Uninstall *WSL* (replace <distrib> with the distrib name you choosed) :
 
 ``` powershell
-lxrun /uninstall /full /y
+wslconfig /u Ubuntu
 ```
 
 - Go back to the [Windows store](https://docs.microsoft.com/en-us/windows/wsl/install-win10#install-your-linux-distribution-of-choice), install *WSL*, and setup everything again/back.
